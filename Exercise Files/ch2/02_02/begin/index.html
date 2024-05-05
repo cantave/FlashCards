@@ -23,21 +23,24 @@
 
                 <div class="options">
                     <div>
-                        <input type="checkbox" id="reverse" value="reverse">
+                        <input v-model="options" true-value="on" false-value="off" type="checkbox" id="reverse" value="reverse">
                         <label for="reverse">Include reverse cards</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="time_limit" value="time_limit">
+                        <input v-model="options" type="checkbox" id="time_limit" value="time_limit">
                         <label for="time_limit">Use time limit</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="reminders" value="reminders">
+                        <input v-model="options" type="checkbox" id="reminders" value="reminders">
                         <label for="reminders">Enable reminders</label>
                     </div>
                 </div>
-
+                
+                <div>
+                    Selected Options: <strong>{{options}}</strong>
+                </div>
                 <button type="submit">Create</button>
             </form>
         </div>
@@ -48,7 +51,8 @@
                 data() {
                     return {
                         deckName: 'Vue.js Fundamentals',
-                        deckDescription: 'Core concepts and directives for working with Vue.js'
+                        deckDescription: 'Core concepts and directives for working with Vue.js',
+                        options:[],
                     };
                 }
             };
