@@ -1,2 +1,2 @@
 # FlashCards
-Flash cards project using vueJS
+Completed a flashcard application as part of a LinkedIn Learning path on Vue.js. Followed along with the course to build this project, which helped me understand the basics of Vue.js, including component structure, state management with Vuex, and integrating a Java backend. This hands-on experience allowed me to apply new skills in a practical way and gain a better understanding of how to develop web applications using Vue.js.
